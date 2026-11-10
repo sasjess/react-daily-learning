@@ -1,12 +1,27 @@
+import { Button } from "../../../components/ui/button";
 import {
   Card,
   CardHeader,
   CardTitle,
   CardContent,
 } from "../../../components/ui/card";
+import { useState } from 'react'
+import { Heart } from "lucide-react";
+
+ 
+
 
 //Destructuring props,default values
+
 function StudentCard({ name, degree, gpa }) {
+  const [liked , setLiked] = useState(false);
+  const [likes , setLikes] = useState(10);
+  function handleLike(){
+
+  setLikes((prev) => (liked ? prev -1 : prev +1));
+  setLiked((prev) => !prev);
+  
+}
   return (
     <div className=" flex px-3 py-3 ">
       <Card className="w-full max-w-xs">
@@ -17,11 +32,20 @@ function StudentCard({ name, degree, gpa }) {
           <h1>Name: {name}</h1>
           <p>Degree: {degree}</p>
           <p>GPA: {gpa}</p>
+
+         <Button variant="outline" className="mt-3" onClick={handleLike}>
+            <Heart
+              className={liked ? "fill-red-500 text-red-500" : "text-gray-500"}
+            />
+            {likes}
+          </Button>
         </CardContent>
       </Card>
     </div>
+    
   );
 }
+
 
 function StudentList({ students }) {
   return students.length === 0
