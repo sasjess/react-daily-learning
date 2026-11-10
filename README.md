@@ -1,16 +1,64 @@
-# React + Vite
+# React Daily Learning
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A daily learning journal where I practise React step by step and push my progress to GitHub. The commit history shows how my skills grow over time.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+I am a third-year BSc Software Engineering student at BCI Campus. I am learning React and JavaScript every day, and this repository holds my practice code, mini components and small projects.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (with Vite)
+- JavaScript (ES6)
+- Tailwind CSS
+- shadcn/ui
+- Git and GitHub
 
-## Expanding the ESLint configuration
+## Learning Log
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Day | Topic | What I built |
+|-----|-------|--------------|
+| 1 | Components and JSX | StudentProfile component |
+| 2 | Props, default props, object props | Reusable student card |
+| 3 | Lists with map and the key prop | Student list and top students list |
+| 4 | State with useState | Like button on each student card |
+
+I update this table as I finish each day.
+
+## What I Have Learned So Far
+
+- Writing function components and using JSX rules
+- Passing data with props, using default values, and passing whole objects
+- Rendering lists with `map`, and why every item needs a unique `key`
+- Keeping data in a separate file (`src/data`) and importing it
+- Using `useState` and always updating state with the setter function
+- Building UI quickly with Tailwind CSS and shadcn/ui components
+
+## Project Structure
+
+```
+src/
+  components/   reusable components such as StudentCard and StudentList
+  data/         sample data such as students.js
+  App.jsx       main component
+  main.jsx      app entry point
+```
+
+## How to Run
+
+```bash
+git clone https://github.com/sasjess/react-daily-learning.git
+cd react-daily-learning
+npm install
+npm run dev
+```
+
+Then open the local address that Vite prints in the terminal, usually http://localhost:5173.
+
+## Next Steps
+
+- Events and conditional rendering
+- Forms and controlled inputs
+- useEffect and fetching data from an API
+- React Router
+- A small task manager project
