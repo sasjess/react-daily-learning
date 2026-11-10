@@ -38,7 +38,7 @@ I update this table as I finish each day.
 
 ```
 src/
-  components/   reusable components such as StudentCard and StudentList
+  home/com/   reusable components such as StudentCard and StudentList
   data/         sample data such as students.js
   App.jsx       main component
   main.jsx      app entry point
