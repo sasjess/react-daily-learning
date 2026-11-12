@@ -1,10 +1,10 @@
-import { Button } from "../../../components/ui/button";
+import { Button } from "../../components/ui/button";
 import {
   Card,
   CardHeader,
   CardTitle,
   CardContent,
-} from "../../../components/ui/card";
+} from "../../components/ui/card";
 import { useState } from 'react'
 import { Heart } from "lucide-react";
 
